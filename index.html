@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+      <div class="whole">
+        <div class="header-bar-large">
+          <style>
+            .header-bar-large {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              padding-bottom: 10%;
+            }
+            .header-bar-small {
+              display: inline-block;
+              flex-grow: 1;
+            }
+          </style>
+          <div class="header-bar-small">
+            <div class="image-bar">
+              <a class="image-search" href="./imgsearch.html" target="_top">Image</a>
+            </div>
+          </div>
+        </div>
+        <div class="google-icon-div">
+          <style>
+            .google-icon-div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .icon {
+              height: 100%;
+              margin-top: auto;
+            }
+          </style>
+          <div class="icon icon-img">
+            <style>
+              .icon-img {
+                max-height: 92px;
+                position: relative;
+              }
+              .logo-img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+              }
+            </style>
+            <a href="https://www.google.com/search?q=google">
+              <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                class="logo-img" alt="Google Logo" title="Google Search" height="92">
+            </a>
+          </div>
+        </div>
+        <div class="search-bar">
+          <style>
+            .search-bar {
+              padding: 30px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: auto;
+              margin-bottom: auto;
+            }
+            .form-class {
+              width: 30%;
+            }
+            .search-bar-input {
+              width: 80%;
+              height: 50px;
+              border: 1px solid #ccc;
+              border-radius: 30px;
+              font-size: 16px;
+              padding-left: 20px;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: 10%;
+            }
+            .search-bar-button {
+              width: 20%;
+              height: 50px;
+              border: 1px solid #ccc;
+              border-radius: 30px;
+              font-size: 16px;
+              padding-left: 10px;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: -20.3%;
+            }
+          </style>
+          <form class="form-class" action="https://www.google.com/search" method="GET" role="search" target="_top">
+            <div class="serach-form">
+              <style>
+                .serach-form {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-top: auto;
+                  width: 100%;
+              </style>
+              <input type="text" name="q" class="search-bar-input" placeholder="Search Google">
+              <input type="submit" value="Search" class="search-bar-button">
+            </div>
+          </form>
+          <div class="footbar">
+            <style>
+              .footbar {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+              }
+            </style>
+            <p>
+              Powered by <a href="https://augists.top">Augists ZDCZ</a>
+            </p>
+          </div>
+      </div>
+        <!-- <form action="https://www.google.com/search"> -->
+        <!--     <input type="text" name="q"> -->
+        <!--     <input type="submit" value="Google Search"> -->
+        <!-- </form> -->
+    </body>
+</html>
