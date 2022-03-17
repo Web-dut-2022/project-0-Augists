@@ -95,8 +95,16 @@
               margin-top: auto;
               margin-bottom: auto;
             }
-            .form-class {
-              width: 60%;
+            @media (min-width: 900px) {
+              .form-class {
+                width: 60%;
+                min-width: 820px;
+              }
+            }
+            @media (max-width: 899px) {
+              .form-class{
+                width: 100%;
+              }
             }
             .search-bar-input {
               width: 80%;
