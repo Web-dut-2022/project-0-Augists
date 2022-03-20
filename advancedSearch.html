@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google Search</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <style type="text/css">
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole">
+      <div class="header-bar-large">
+        <style>
+          .header-bar-large {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 5px;
+            padding-bottom: 10px;
+          }
+          .logo-bar {
+            display: inline-block;
+            porision: relative;
+            margin-left: 15px;
+            padding-top: 10px;
+          }
+          .header-bar-small {
+            display: inline-block;
+            flex-grow: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+          }
+        </style>
+        <div class="logo-bar">
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          class="logo-img" alt="Google Logo" title="Google Search" height="25px">
+        </div>
+        <div class="header-bar-small">
+          <style>
+            .image-bar {
+              display: inline-block;
+              position: relative;
+              margin-right: 10px;
+            }
+            .advanced-bar {
+              display: inline-block;
+              position: relative;
+              margin-right: 10px;
+            }
+          </style>
+          <div class="image-bar">
+            <a class="image-search" href="./index.html" target="_top">Text</a>
+          </div>
+          <div class="advanced-bar">
+            <a class="advanced-search" href="./imageSearch.html" target="_top">Image</a>
+          </div>
+        </div>
+      </div>
+      <div class="appbar">
+        <style>
+          .appbar {
+            display: flex;
+            align-items: left;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            margin-left: 3%;
+            font-size: 20px;
+          }
+        </style>
+        <p>
+          Advanced Search
+        </p>
+      </div>
+      <!-- <div class="search-bar"> -->
+      <div>
+        <style>
+          .search-bar {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 3%;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .find-page-with {
+            font-size: 16px;
+          }
+          .search-box p {
+            display: inline-block;
+            font-size: 14px;
+            width: 20%;
+          }
+          .search-box input {
+            display: inline-block;
+            height: 25px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            position: relative;
+            margin-left: 5%;
+            width: 70%;
+          }
+          .search-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .search-bar-button {
+            width: 140px;
+            height: 30px;
+            border: 1px solid;
+            border-radius: 3px;
+            font-size: 14px;
+            color: white;
+            background-color: #4285f4;
+          }
+        </style>
+        <form class="form-class" action="https://www.google.com/search" method="GET" role="search" target="_top">
+          <div class="search-bar">
+            <p class="find-page-with">Find pages with...</p>
+            <div class="search-box">
+              <p>all these words:</p>
+              <input type="text" name="as_q" class="search-bar-input">
+            </div>
+            <div class="search-box">
+              <p>this exact word or phrase:</p>
+              <input type="text" name="as_epq" class="search-bar-input">
+            </div>
+            <div class="search-box">
+              <p>any of these words:</p>
+              <input type="text" name="as_oq" class="search-bar-input">
+            </div>
+            <div class="search-box">
+              <p>none of these words:</p>
+              <input type="text" name="as_eq" class="search-bar-input">
+            </div>
+          </div>
+          <div class="search-button">
+            <input type="submit" value="Advanced Search" class="search-bar-button">
+          </div>
+        </form>
+        <div class="footbar">
+          <style>
+            .footbar {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          </style>
+          <p>
+            Powered by <a href="https://augists.top">Augists ZDCZ</a>
+          </p>
+        </div>
+    </div>
+      <!-- <form action="https://www.google.com/search"> -->
+      <!--     <input type="text" name="q"> -->
+      <!--     <input type="submit" value="Google Search"> -->
+      <!-- </form> -->
+  </body>
+</html>
+ 
